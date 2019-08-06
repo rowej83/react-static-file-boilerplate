@@ -1,0 +1,41 @@
+{
+  "name": "react-static-file-boilerplate",
+  "version": "1.0.0",
+  "description": "A Boilerplate designed to integrate into existing apps easier by producing static files while also hot reloading during development.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Jason Rowe",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack -d --mode development",
+    "build-prod": "webpack -p --mode production",
+    "start": "webpack-dev-server --hot --mode development"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.10",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}

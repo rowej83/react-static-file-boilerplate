@@ -1,0 +1,9 @@
+/*  These styles get added to the final css bundle first. Then styles.css  */
+$primary-color: white;
+$bg: black;
+body {
+  color: $primary-color;
+  background-color: yellreow;
+}
+
+
