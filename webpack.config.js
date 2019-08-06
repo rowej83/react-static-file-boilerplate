@@ -12,10 +12,8 @@ var sassRules = {
 const config = {
   watch:true,
   plugins: [
-    // new MiniCssExtractPlugin('final.css')
     new MiniCssExtractPlugin({filename:'./css/styles.css'})
   ],
-  // entry: './src/index.js',
   entry:{
     main:['./src/styles.scss','./src/index.js']
   },
@@ -33,7 +31,6 @@ const config = {
       {
         test: /\.s?[ac]ss$/,
         use: [
-            // MiniCssExtractPlugin.loader,
             {
               loader:MiniCssExtractPlugin.loader,
               options:{hmr:true}
